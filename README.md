@@ -1,4 +1,4 @@
-#pirates-of-everseas-fanpage
+# pirates-of-everseas-fanpage
 
 This is the source code of the PoE fanpage at [https://everseas-pirates.ml](https://everseas-pirates.ml).
 

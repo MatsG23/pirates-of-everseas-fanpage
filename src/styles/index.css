@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Merriweather Regular";
+  src: url("Merriweather-Regular.ttf") format("truetype");
+}
+
+body {
+  font-family: "Merriweather Regular", sans-serif;
+}

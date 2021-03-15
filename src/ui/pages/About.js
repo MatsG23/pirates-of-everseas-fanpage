@@ -1,29 +1,30 @@
 import { useTranslation } from "react-i18next";
+import Template from "./Template";
 
-export function AboutPage() {
-  const { t } = useTranslation();
+export function About() {
+  const { t } = useTranslation("about");
 
   return (
-    <div className="height-full p-3 d-flex flex-column justify-content-around align-content-center">
-      <h1>{t("about_header")}</h1>
+    <Template>
+      <h1 className="mb-5">{t("header")}</h1>
       <div className="fs-5">
         <ul>
           <li>
-            {t("about_picBy")}
+            {t("picBy")}
             <a
               href="https://pixabay.com/de/illustrations/schiff-piraten-piratenschiff-masten-109092"
               target="_blank"
-              rel="noreferrer"
+              rel="noreferrer external"
             >
               MakroWayland (Pixabay)
             </a>
           </li>
           <li>
-            {t("about_picsBy")}
+            {t("picsBy")}
             <a
               href="https://github.com/wiredmax/react-flags/tree/master/vendor/flags/flags-iso/flat/32"
               target="_blank"
-              rel="noreferrer"
+              rel="noreferrer external"
             >
               wiredmax (Github)
             </a>
@@ -33,6 +34,6 @@ export function AboutPage() {
           <li> </li>
         </ul>
       </div>
-    </div>
+    </Template>
   );
 }

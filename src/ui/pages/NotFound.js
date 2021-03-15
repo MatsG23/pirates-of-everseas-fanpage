@@ -1,24 +1,25 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import Template from "./Template";
 import pirateShip from "../../media/pirate_ship.jpg";
 
-export function NotFoundPage() {
-  const { t } = useTranslation();
+export function NotFound() {
+  const { t } = useTranslation("404");
 
   return (
-    <div className="height-full flex-center flex-column">
+    <Template>
       <img
         alt="Pirate ship"
         src={pirateShip}
         height="55%"
         className="d-inline-block align-top mb-4"
       />
-      <h1>{t("404_header")}</h1>
-      <p className="text-uppercase">{t("404_piratesDestroyedIt")}</p>
-      <p style={{ fontSize: "15px" }}>{t("404_confession")}</p>
+      <h1>{t("header")}</h1>
+      <p className="text-uppercase">{t("piratesDestroyedIt")}</p>
+      <p style={{ fontSize: "15px" }}>{t("confession")}</p>
       <Link to="/" className="btn btn-primary">
-        {t("404_toHome")}
+        {t("toHome")}
       </Link>
-    </div>
+    </Template>
   );
 }

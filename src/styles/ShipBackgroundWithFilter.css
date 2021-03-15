@@ -3,6 +3,6 @@
 }
 
 .ship-bg {
-  background: url(../media/background.webp) no-repeat center center fixed;
+  background: #000 url(../media/background.webp) no-repeat fixed center center;
   background-size: cover;
 }

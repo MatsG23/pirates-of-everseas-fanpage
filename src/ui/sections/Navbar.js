@@ -1,8 +1,8 @@
-import NavbarBrand from "./NavbarBrand";
-import NavLinks from "./NavLinks";
-import logoEdited from "../../../media/logo.webp";
+import NavbarBrand from "./navbar/NavbarBrand";
+import logoEdited from "../../media/logo.webp";
+import LanguageDropdown from "./navbar/LanguageDropdown";
 
-export function Navbar() {
+export default function Navbar() {
   return (
     <nav
       className="navbar navbar-dark navbar-expand-lg static-top"
@@ -10,7 +10,7 @@ export function Navbar() {
     >
       <div className="container-fluid">
         <NavbarBrand img={logoEdited} text="PoE Fanpage" />
-        <NavLinks />
+        <LanguageDropdown />
       </div>
     </nav>
   );

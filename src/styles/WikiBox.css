@@ -1,0 +1,12 @@
+.box {
+  padding: 10px;
+  background: linear-gradient(to top, #c6ffdd, #fbd786, #f7797d);
+  border-radius: 7px;
+  color: #555;
+  transition: 0.3s all ease-out;
+}
+
+.box:hover {
+  filter: brightness(85%);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}

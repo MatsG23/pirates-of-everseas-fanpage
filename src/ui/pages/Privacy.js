@@ -1,15 +1,19 @@
 import { useTranslation } from "react-i18next";
+import Template from "./Template";
 
-export function PrivacyPage() {
-  const { t } = useTranslation();
+export function Privacy() {
+  const { t } = useTranslation("privacy");
 
   return (
-    <div className="height-full d-flex justify-content-center align-content-center flex-column p-3">
+    <Template>
       <h1 className="mb-5">Datenschutz</h1>
 
-      <p className="text-danger">{t("privacy_onlyEU")}</p>
+      <p className="text-danger">{t("onlyEU")}</p>
 
-      <div className="overflow-auto" style={{ height: "200%", width: "100%" }}>
+      <div
+        className="overflow-auto p-4 mb-5"
+        style={{ height: "200%", width: "100%" }}
+      >
         <h4>Recht auf Beschwerde bei der zuständigen Aufsichtsbehörde</h4>
         <p>
           Als Betroffener steht Ihnen im Falle eines datenschutzrechtlichen
@@ -20,7 +24,7 @@ export function PrivacyPage() {
           <a
             href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html"
             target="_blank"
-            rel="noreferrer"
+            rel="noreferrer external"
           >
             Dieser
           </a>{" "}
@@ -82,6 +86,6 @@ export function PrivacyPage() {
           oder vorvertraglicher Maßnahmen gestattet.
         </p>
       </div>
-    </div>
+    </Template>
   );
 }

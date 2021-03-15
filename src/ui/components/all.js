@@ -1,3 +1,3 @@
-export * from "./navbar/Navbar";
-export * from "./Box";
-export * from "./Footer";
+export * from "./ModalOpener";
+export * from "./WikiBox";
+export * from "./ShipBackgroundWithFilter";
